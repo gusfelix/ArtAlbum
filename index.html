@@ -25,10 +25,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="#map">Mapa</a>
+                        <a class="nav-link active text-white" href="#albuns">Álbuns</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="#albuns">Álbuns</a>
+                        <a class="nav-link active text-white" href="#map">Mapa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white" href="#about">Sobre</a>
@@ -99,15 +99,6 @@
     </div>
 
     <main>
-        <h4 id="map" class="pt-5">Mapa</h4>
-        <hr />
-
-        <iframe class="col-12"
-            src="https://www.google.com/maps/d/u/0/embed?mid=1110Kd_HNg0FKf0j3-ndp2gUoIzuvrNc&ehbc=2E312F&ll=22.88706591937643%2C-25.257577827225873&z=2&noprof=1"
-            width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
         <h4 id="albuns" class="pt-5">Lista de álbuns</h4>
         <hr>
         <h6 class="mb-4">Clique nos artistas para conhecer mais sobre eles e suas obras</h6>
@@ -197,6 +188,15 @@
                 </div>
             </div>
         </section>
+
+        <h4 id="map" class="pt-5">Mapa</h4>
+        <hr />
+
+        <iframe class="col-12 map-iframe"
+            src="https://www.google.com/maps/d/embed?mid=1110Kd_HNg0FKf0j3-ndp2gUoIzuvrNc&ehbc=2E312F&ll=22.88706591937643%2C-25.257577827225873&z=2&noprof=1"
+            width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </main>
 
     <footer class="bg-secondary text-white mt-4">
