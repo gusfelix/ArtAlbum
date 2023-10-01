@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean-Michel Basquiat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <script>
+        function addActive(itemId) {
+            $('#exampleModal').modal('show')
+
+            let imgs = document.querySelectorAll('.carousel-item')
+
+            imgs.forEach(img => {
+                img.classList.remove('active')
+            })
+
+            const carouselItem = document.getElementById(itemId)
+
+            carouselItem.classList.add('active')
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-secondary">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-white" href="../index.html">ArtAlbum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html#map">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html#albuns">Álbuns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html#about">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h4 class="pt-5">Jean-Michel Basquiat</h4>
+        <hr />
+
+        <section class="container-fluid">
+            <div class="row gx-1">
+                <div class="card-container my-2 col-xl-4 col-lg-3  col-sm-12">
+                    <img src="../assets/img/jean-michel-basquiat-profile.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="info px-5 my-2 col-xl-4 col-lg-9 col-sm-12">
+                    <h4 class="">Sobre o artista</h4>
+                    <p text-justify>
+                        Jean-Michel Basquiat, um ícone da arte no século XX, nasceu nos Estados Unidos em 1960. Sua arte audaciosa e expressiva desafiou convenções, combinando cores vibrantes, símbolos, e palavras em um estilo único. Suas pinturas exploravam questões sociais e raciais, proporcionando uma visão contundente da sociedade.   Basquiat colaborou com Andy Warhol, unindo diferentes gerações e estilos. Sua breve vida deixou um impacto profundo na arte contemporânea, destacando vozes marginalizadas e experiências pessoais. Sua arte continua a inspirar, questionar e emocionar, mantendo sua relevância ao longo do tempo.
+                    </p>
+                </div>
+
+                <div class="local px-5 my-2 col-xl-4">
+                    <h4>Localização</h4>
+                    <p>Nova Iorque, Estados Unidos</p>
+
+                    <h4>Data de nascimento</h4>
+                    <p>22 de dezembro de 1960</p>
+                </div>
+            </div>
+        </section>
+
+
+        <h4 class="pt-5">Obras</h4>
+        <hr />
+
+        <section class="container-fluid">
+            <div class="row gx-1">
+                <div class="card-container px-2 my-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" onclick="addActive('item-1')">
+                        <img src="../assets/img/basquiat/passaronodinheiro-cke.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Passáro no dinheiro</h5>
+                            <p class="card-text">1981</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container px-2 my-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" onclick="addActive('item-2')">
+                        <img src="../assets/img/basquiat/cabeza-cke.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Cabeza</h5>
+                            <p class="card-text">1982</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container px-2 my-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" onclick="addActive('item-3')">
+                        <img src="../assets/img/basquiat/cavalgando-com-a-morte-cke.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Cavalgando com a morte</h5>
+                            <p class="card-text">1988</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container px-2 my-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" onclick="addActive('item-4')">
+                        <img src="../assets/img/basquiat/caveira-cke.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Caveira</h5>
+                            <p class="card-text">1981</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container px-2 my-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" onclick="addActive('item-5')">
+                        <img src="../assets/img/basquiat/deuslei-1-cke.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Deus, Lei</h5>
+                            <p class="card-text">1981</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container px-2 my-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" onclick="addActive('item-6')">
+                        <img src="../assets/img/basquiat/dispensadordepez-cke.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Dispensador de pez</h5>
+                            <p class="card-text">1984</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container px-2 my-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" onclick="addActive('item-7')">
+                        <img src="../assets/img/basquiat/irony-of-the-negro-policeman-1981-cke.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Ironia do policial negro</h5>
+                            <p class="card-text">1981</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container px-2 my-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" onclick="addActive('item-8')">
+                        <img src="../assets/img/basquiat/pesoliquido-cke.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Peso líquido </h5>
+                            <p class="card-text">1981</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Detalhes da obra</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div id="item-1" class="carousel-item">
+                                <img src="../assets/img/basquiat/passaronodinheiro-cke.jpg" class="d-block w-100 rounded" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div id="item-2" class="carousel-item">
+                                <img src="../assets/img/basquiat/cabeza-cke.webp" class="d-block w-100 rounded"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div id="item-3" class="carousel-item">
+                                <img src="../assets/img/basquiat/cavalgando-com-a-morte-cke.webp" class="d-block w-100 rounded"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                            <div id="item-4" class="carousel-item">
+                                <img src="../assets/img/basquiat/caveira-cke.webp" class="d-block w-100 rounded" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                            <div id="item-5" class="carousel-item">
+                                <img src="../assets/img/basquiat/deuslei-1-cke.webp" class="d-block w-100 rounded" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                            <div id="item-6" class="carousel-item">
+                                <img src="../assets/img/basquiat/dispensadordepez-cke.webp" class="d-block w-100 rounded" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                            <div id="item-7" class="carousel-item">
+                                <img src="../assets/img/basquiat/irony-of-the-negro-policeman-1981-cke.jpg" class="d-block w-100 rounded"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                            <div id="item-8" class="carousel-item">
+                                <img src="../assets/img/basquiat/pesoliquido-cke.webp" class="d-block w-100 rounded"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

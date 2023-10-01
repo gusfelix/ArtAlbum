@@ -27,6 +27,9 @@ hr{
     filter: contrast(1.5);
 }
 
+a{
+    text-decoration: none;
+}
 
 .card{
     cursor: pointer;
@@ -38,6 +41,9 @@ hr{
     box-shadow: 0 1px 10px #CCC;
 }
 
+.info{
+    text-align: justify;
+}
 
 @media screen and (max-width: 768px){
 
